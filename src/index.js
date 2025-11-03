@@ -7,7 +7,7 @@ const X_TWEETS = "https://api.x.com/2/tweets";
 const X_MEDIA_UPLOAD = "https://api.x.com/2/media/upload";
 
 // ここに投稿したいDriveの画像ファイルID
-const DRIVE_FILE_ID = PropertiesService.getScriptProperties().getProperty("DRIVE_FILE_ID");
+// const DRIVE_FILE_ID = PropertiesService.getScriptProperties().getProperty("DRIVE_FILE_ID");
 
 // 画像付きツイート投稿
 function tweetImage() {
