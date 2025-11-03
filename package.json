@@ -1,0 +1,22 @@
+{
+  "name": "twitter-aibou-bot",
+  "version": "0.1.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kasumi-sou/twitter-Aibou-Bot.git"
+  },
+  "author": "kasumi-sou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kasumi-sou/twitter-Aibou-Bot/issues"
+  },
+  "homepage": "https://github.com/kasumi-sou/twitter-Aibou-Bot#readme",
+  "description": "",
+  "dependencies": {
+    "eslint": "^9.39.0"
+  }
+}
