@@ -3,5 +3,6 @@
     "editor.detectIndentation": false,
     "editor.codeActionsOnSave": {
       "source.fixAll":"always"
-    }
+    },
+    "github.copilot.chat.localeOverride": "en",
 }
