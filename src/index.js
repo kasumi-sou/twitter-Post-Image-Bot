@@ -7,7 +7,7 @@ const X_MEDIA_UPLOAD = "https://api.x.com/2/media/upload";
 
 // 画像付きツイート投稿
 function tweetImage() {
-  main();
+  authorizationSetting();
   const service = getService();
 
   // 1) Driveから画像Blob
