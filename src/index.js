@@ -1,7 +1,3 @@
-// ======================================================================
-// X(API v2) × GAS：Driveの画像1枚だけを投稿するBOT
-// ======================================================================
-
 // エンドポイント
 const X_TWEETS = "https://api.x.com/2/tweets";
 const X_MEDIA_UPLOAD = "https://api.x.com/2/media/upload";
@@ -48,7 +44,7 @@ function tweetImage() {
   Logger.log("OK: " + body);
 }
 
-// アップロード（multipart/form-data）
+// アップロード（v2）
 function uploadMediaV2(imageBlob, service) {
   const res = UrlFetchApp.fetch(X_MEDIA_UPLOAD, {
     method: "POST",
@@ -80,7 +76,6 @@ function getRandomImage() {
   if (!folderId) throw new Error("FOLDER_ID が未設定です");
   const folder = DriveApp.getFolderById(folderId);
 
-  // フォルダ直下のみが対象。サブフォルダも含めたいなら別関数で回そう（下に例あり）
   const q = "mimeType contains \"image/\" and trashed = false";
   const it = folder.searchFiles(q);
 
@@ -163,7 +158,7 @@ function logRedirectUri() {
   Logger.log(service.getRedirectUri());
 }
 
-function main() {
+function authorizationSetting() {
   const service = getService();
   if (service.hasAccess()) {
     Logger.log("Already authorized");
